@@ -16,7 +16,7 @@ a, a:hover, a:focus {
 
 .auth-forms {
   max-width:400px;
-  margin:0 auto;  
+  margin:0 auto;
   padding:1px 25px 25px 25px;
 }
 
@@ -62,7 +62,7 @@ a, a:hover, a:focus {
 
 .price-tag {
   font-size: 40px;
-  font-weight: 300;  
+  font-weight: 300;
   margin-top: 20px;
   text-align: center;
   background-color: #f1f1f1;
@@ -92,7 +92,7 @@ a, a:hover, a:focus {
 
 .list-group .list-group-item .payment {
   float: right;
-  margin-top: 0;  
+  margin-top: 0;
   width: 85px;
   text-align: center;
   font-size: 30px;
@@ -106,7 +106,7 @@ a, a:hover, a:focus {
   right: 5px;
   bottom: 5px;
   width: 90px;
-  height: 25px; 
+  height: 25px;
 }
 
 .list-group-item-text {
@@ -146,4 +146,12 @@ a, a:hover, a:focus {
 .img-circle.comment.gravatar {
   width: 35px;
   margin-right: 5px;
+}
+
+.btn-facebook{
+  background-color: #3b5998 !important
+}
+
+.btn-google-plus{
+  background-color: #DD4B39 !important
 }
