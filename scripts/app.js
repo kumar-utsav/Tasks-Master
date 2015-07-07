@@ -5,7 +5,8 @@ var app = angular
     'ngAnimate',
     'ngResource',
     'ngRoute',
-    'firebase'
+    'firebase',
+    'toaster'
   ])
   .constant('FURL', 'https://tasksninja.firebaseio.com/')
   .config(function ($routeProvider) {
@@ -24,6 +25,14 @@ var app = angular
       .when('/browse', {
         templateUrl: 'views/browse.html',
         controller: 'TaskController'
+      })
+      .when('/register', {
+        templateUrl: 'views/register.html',
+        controller: 'AuthController'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'AuthController'
       })
       .otherwise({
         redirectTo: '/'
