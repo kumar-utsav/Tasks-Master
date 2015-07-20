@@ -8,7 +8,6 @@ app.factory('Comment', function(FURL, $firebase){
         },
 
         addComment: function(taskId, comment) {
-            console.log(this);
 			var task_comments = this.comments(taskId);
 			comment.datetime = Firebase.ServerValue.TIMESTAMP;
 
