@@ -28,11 +28,25 @@ app.factory('Task', function(FURL, $firebase, Auth){
     },
 
     isCreator: function(task){
+      console.log("task js:" + task.title);
       return (user && user.provider && user.uid === task.poster);
     },
 
     isOpen: function(task){
       return task.status === "open";
+    },
+
+    completeTask: function(taskId){
+        var t = this.getTask(taskId);
+        return t.$update({status: "completed"});
+    },
+
+    isAsignee: function(task){
+        return (user && user.provider && user.uid === task.runner);
+    },
+
+    isCompleted: function(task){
+        return task.status === "completed";
     }
 
   };
